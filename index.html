@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <style>
+        h1{
+            color: deeppink;
+            text-align: center;
+            font-family: "High Tower Text";
+        }
+        body{
+            background-image: url("https://cdn.thanhtrungmobile.vn/thanhtrungmobile-vn/2022/01/3991585822197261749137468929300101453578240n-1541448251880391352418-1-1642158361.jpg");}
+        button{
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+<br>
+<br>
+<br>
+<h1 >EM CÓ YÊU ANH KHÔNG ? <i class="bi bi-emoji-kiss"></i></h1>
+<button id="co" onclick="bam()" style="top:300px; left:380px;width: 20%; height: 10%;background-color: darkred;color: white;border-radius: 50px " ><h3><i class="bi bi-heart"></i> <i>Tất nhiên là có rồi<i> <i class="bi bi-heart"></i></h3></button>
+<button id="khong" onmouseover="chay()" style="top: 300px; left : 650px;width: 10%;height: 10%;border-radius: 30px;background-color: saddlebrown;color: white"><h3>Mơ à  <i class="bi bi-emoji-smile-upside-down-fill"></i></h3></button>
+<script>
+    function bam(){
+        window.location.href = "index1.html";
+    }
+    function chay(){
+        let chieuCao = document.innerHeight;
+        let chieuDai = document.innerWidth;
+        document.getElementById('khong').style.top = Math.floor(Math.random() * innerHeight) + 'px';
+        document.getElementById('khong').style.left = Math.floor(Math.random() * innerWidth)+ 'px';
+    }
+</script>
+</body>
+</html>
